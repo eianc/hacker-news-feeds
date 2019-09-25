@@ -20,3 +20,33 @@
 .App-link {
   color: #09d3ac;
 }
+
+.c-story {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.c-story__item {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 4px;
+}
+.c-story__item:before {
+  content: attr(data-score);
+  display: inline-block;
+}
+.c-story__item:hover {
+  border-color: red;
+  grid-column: 2fr;
+  grid-row: 2fr;
+}
+
+.c-story__title {
+  font-size: 14px;
+}

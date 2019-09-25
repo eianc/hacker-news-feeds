@@ -43,7 +43,7 @@ const StoriesContainer = () => {
 
     return (
         <div>
-            <ul>
+            <ul className="c-story">
                 {data.allStories.edges.map((item: IEdge) => (
                     <Fragment key={item.node.id}>
                         <Story 
