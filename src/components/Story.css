@@ -1,0 +1,18 @@
+.c-storyItem {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 4px;
+}
+.c-storyItem:before {
+  content: attr(data-score);
+  display: inline-block;
+}
+.c-storyItem:hover {
+  border-color: red;
+  grid-column: 2fr;
+  grid-row: 2fr;
+}
+
+.c-storyItem__title {
+  font-size: 14px;
+}

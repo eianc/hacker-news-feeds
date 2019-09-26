@@ -1,0 +1,11 @@
+.c-storiesContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
