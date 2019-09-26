@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.6.0",
     "@svgr/webpack": "4.3.2",
+    "@types/enzyme": "^3.10.3",
     "@types/graphql": "^14.5.0",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",
@@ -27,6 +28,8 @@
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "5.1.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.1.0",
     "eslint-config-react-app": "^5.0.2",
     "eslint-loader": "3.0.0",
@@ -66,6 +69,7 @@
     "sass-loader": "7.2.0",
     "semver": "6.3.0",
     "style-loader": "1.0.0",
+    "styled-components": "^4.4.0",
     "terser-webpack-plugin": "1.4.1",
     "ts-node-dev": "^1.0.0-pre.43",
     "ts-pnp": "1.1.4",
@@ -109,7 +113,9 @@
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
-    "setupFilesAfterEnv": [],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test-setup.js"
+    ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
