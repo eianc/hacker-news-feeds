@@ -1,4 +1,18 @@
 .c-storiesContainer {
+  text-align: center;
+}
+
+.c-storiesContainer__button {
+  background-color: #011f4b;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #011f4b;
+  padding: 12px 34px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.c-storiesContainer__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,4 +22,22 @@
     grid-row-gap: 10px;
     grid-template-columns: repeat(8, 1fr);
   }
+
+@media screen and (max-width: 1024px) {
+  .c-storiesContainer__list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c-storiesContainer__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-storiesContainer__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
   
