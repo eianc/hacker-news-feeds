@@ -4,6 +4,8 @@ import { IEdge } from '../interfaces/stories';
 import { getStories } from '../queries/stories';
 import Story from './Story';
 
+import './StoriesContainer.css';
+
 const StoriesContainer = () => {
     const { loading, error, data, fetchMore } = useQuery(getStories,
         { variables: { first: 50, after: 0 }}
@@ -43,7 +45,7 @@ const StoriesContainer = () => {
 
     return (
         <div>
-            <ul className="c-story">
+            <ul className="c-storiesContainer">
                 {data.allStories.edges.map((item: IEdge) => (
                     <Fragment key={item.node.id}>
                         <Story 
